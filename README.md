@@ -11,6 +11,8 @@ A README file that includes:
   
   g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
 
+  Does not require any non-standard hardware, however the parallel processing of the data will be increased with more cpu available. Results produced using KU server with 54 cores.
+
 2. Installation guide
 
   No installation required, other than suitable C++ complier, e.g. g++ (GCC).
@@ -20,7 +22,7 @@ A README file that includes:
   To run the Bayesian Filtering agorithm on the example data "ExampleData.csv", firstly download all files. 
 
   Open the command line prompt and navigate to loction of downloaded files.
-  Enter "./make".
+  Type "make" and press enter to run Demo.
 
   The resulting MAP estimate for the signal is given in the "Output.csv" file where the first column is the example data and the last column is its corresponding the MAP estimate. Can be viewed using excel or similar program.
 
