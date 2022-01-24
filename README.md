@@ -6,7 +6,9 @@ Compiled standalone software and/or source code
 A small (simulated or real) dataset to demo the software/code
 A README file that includes:
 1. System requirements
+  
   Versions the software has been tested on:
+  
   g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
 
 2. Installation guide
