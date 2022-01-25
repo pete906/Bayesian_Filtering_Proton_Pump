@@ -15,15 +15,16 @@ int main() {
 
     vector < double > Data, Sig, EstSig, outputs, estoutputs;
 
-    int n=100;
+  
     int nCP=2;
-    double pi1, pi2;
-    
+    int n=100;
     Data=SimulatedDataRnd(nCP, n, outputs);
+   
     
     ofstream T1_File("Output.csv");
-
-
+   
+   
+    double pi1, pi2;
     estoutputs=RunMLE_2_prob(0, Data, n,0, pi1, pi2);
 
     

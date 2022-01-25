@@ -36,7 +36,7 @@ vector < double> RunMLE_2_prob(int Lversion, vector<double> Data, int n,double s
 
 
 	for (int i = 1;i <= n;i++) {
-        cout << i << "  \n";
+        cout << i << "%  \n";
 
 		Storage[1][i - 1] = i;
 		double temp = 0, maxx = -INFINITY;
