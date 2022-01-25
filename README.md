@@ -11,7 +11,6 @@ A README file includes:
 Compiled source code.
 A simulated dataset to demo the code.
 
-# System requirements
   
   # System requirements
   
