@@ -62,7 +62,7 @@ The depostitory contains:
   
   # Instructions for use
   
-  This demo can be applied to real data by changing the vector 'Data' in the 'Run_demo.cpp' to be equal to the real data. For example if the real data was contained in a file 'RealData.csv' we could change the lines 
+  This demo can be applied to real data rather than simulated data by changing the vector 'Data' in the 'Run_demo.cpp' to be equal to the real data. For example if the real data was contained in a file 'RealData.csv' we could change the lines 
  ```
  int nCP=2;
  int n=100;
