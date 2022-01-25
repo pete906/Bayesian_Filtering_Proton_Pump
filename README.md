@@ -59,3 +59,43 @@ The depostitory contains:
   The Makefile (run using the "make" command) also produces a plot of the results using a small python script "Plot_outputs.py", however a similar graph may be created and viewed using excel or similar program.
 
   Expected run time for demo on a "normal" desktop computer is approximately 30 seconds (possibly a few minutes on older computers).
+  
+  # Instructions for use
+  
+  This demo can be applied to real data by changing the vector 'Data' in the 'Run_demo.cpp' to be equal to the real data. For example if the real data was contained in a file 'RealData.csv' we could change the lines 
+ ```
+ int nCP=2;
+ int n=100;
+ Data=SimulatedDataRnd(nCP, n, outputs);
+ ```
+ to 
+ ```
+ Data=readCSV('RealData.csv');
+ int n=Data.size();
+ ```
+ where the 'readCSV()' function could be defined as 
+ ```
+ vector<double> readCSV(string filename){
+    vector<double> vec={};
+    ifstream in(filename);
+    string line;
+    while (getline(in, line))                   
+    {   string datatemp;
+        datatemp=line.substr(0, line.find(",,"));
+        stringstream ss(datatemp);
+        vector<double> row={};
+        string data;
+        int i=0;
+        while (getline(ss, data, ',')){       
+                row.push_back(stod(data));      
+        }
+        for(int i=1;row.size(); i++){
+            cout << row[i-1] << "\n";
+        }
+        vec=row;
+    }
+    return vec;
+}
+ ```
+ or similar.
+  
