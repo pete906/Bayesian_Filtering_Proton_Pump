@@ -2,6 +2,8 @@
 Demo of Bayesian Filtering application to proton-pumping, inactive and proton-leaky modes.
 
 - [System Requirements](#system-requirements)
+- [Installation guide](#installation_guide)
+- [Demo](#demo)
 
  
 Compiled standalone software and/or source code
