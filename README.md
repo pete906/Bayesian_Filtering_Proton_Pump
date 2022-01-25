@@ -54,7 +54,7 @@ The depostitory contains:
 
   The code should give you an approximate percentage of analysis which has been completed. Then will write the outputs to a csv file called "Output.csv".
   
-  In the "Output.csv" file will be three columns of data, the first is the unobservable signal, the second is the observed data (signal plus noise), and the third is the resulting MAP estimate for the signal calculated via the Bayesian Stochastics Filtering algorithm. 
+  In the "Output.csv" file will be three columns of data, the first is the unobservable signal (available as we are simulating the data), the second is the observed data (the unobservable signal plus noise), and the third is the resulting most probable (MAP) estimate for the signal calculated via the Bayesian Stochastic Filtering algorithm. 
  
   The Makefile (run using the "make" command) also produces a plot of the results using a small python script "Plot_outputs.py", however a similar graph may be created and viewed using excel or similar program.
 
