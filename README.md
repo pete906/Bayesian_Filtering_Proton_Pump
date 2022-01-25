@@ -1,11 +1,14 @@
 # Bayesian_Filtering_Proton_Pump
 Demo of Bayesian Filtering application to proton-pumping, inactive and proton-leaky modes.
 
+- [System Requirements](#system-requirements)
 
+ 
 Compiled standalone software and/or source code
 A small (simulated or real) dataset to demo the software/code
 A README file that includes:
-1. System requirements
+
+# System requirements
   
   Versions the software has been tested on:
   
@@ -13,11 +16,11 @@ A README file that includes:
 
   Does not require any non-standard hardware, however the parallel processing of the data will be increased with more cpu available. Results produced using KU server with 54 cores.
 
-2. Installation guide
+# Installation guide
 
   No installation required, other than suitable C++ complier, e.g. g++ (GCC).
 
-3. Demo
+# Demo
 
   To run the Bayesian Filtering agorithm on the example data "ExampleData.csv", firstly download all files. 
 
