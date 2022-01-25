@@ -1,46 +1,58 @@
 # Bayesian_Filtering_Proton_Pump
-Demo of Bayesian Filtering application to proton-pumping, inactive and proton-leaky modes.
+This respository contains a demo of the application of Bayesian Stochastic Filtering for paper titled "Direct observation of regulation by mode-switching of the mammalian-brain V-ATPase".
+
+The demo simulates some data from the described model and uses Bayesian Stochastic Filtering techniques to filter out the noise and estimate the most probable (Maximum a posteriori estimate) of the underlying signal. See sections on 'Stochastic model description', 'Stochastic Filtering' and 'Sliding method' in paper for more information.
+
+The depostitory contains:
+ Compiled source code.
+ A simulated dataset to demo the code.
 
 - [System Requirements](#system-requirements)
 - [Installation guide](#installation_guide)
 - [Demo](#demo)
 
- 
-
-A README file includes:
-Compiled source code.
-A simulated dataset to demo the code.
-
-  
   # System requirements
+  
+  ## Hardware requirements
+  The code used in the Demo requires only a standard computer with enough RAM to support the in-memory operations.
+
+  Does not require any non-standard hardware, however the code is parallelisable (via OpenMP) and so parallel processing will increase the speed with more CPU cores available. Results for paper were produced using KU server with 54 cores.
+ 
+  ## Software requirements
+  The code used in the Demo requires only a C++ and Python complier and an OS that can support. 
   
   Versions the software has been tested on:
   
-  g++ (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
+  macOS Monterey, Version 12.1
+  g++ (GCC) 12.0.5
   Python 2.7.18
-
-  Does not require any non-standard hardware, however the code is parallelisable and so parallel processing will increase the speed with more cpu available. Results  for produced using KU server with 54 cores.
 
 # Installation guide
 
   No installation required, other than suitable C++ complier, e.g. g++ (GCC), and python for plotting of results.
+  
+  See [Demo] below for instructions on running the demo.
 
 # Demo
-
 
   To run the Bayesian Filtering agorithm on the simulated data, firstly download all files. 
   
   This can be done via the command:
-  
+  ```
    git clone https://github.com/pete906/Bayesian_Filtering_Proton_Pump.git
-  
+  ```
   Nativigate to the "Bayesian_Filtering_Proton_Pump" folder created; This can be achieved by moving the folder to the desktop and using the command 
-  
+  ```
    cd Desktop/Bayesian_Filtering_Proton_Pump
+  ```
+  The command 
+  ```
+  make
+  ```
+  will run demo, output the results and plot the results.
   
-  Type "make" and press enter to run demo.
 
-  The code should give you a approximate percentage of analysis which has been completed. Then will write the outputs to a csv file called "Output.csv".
+  The code should give you an approximate percentage of analysis which has been completed. Then will write the outputs to a csv file called "Output.csv".
   
   In the "Output.csv" file will be three columns of data, the first is the unobservable signal, the second is the observed data (signal plus noise), and the third is the resulting MAP estimate for the signal calculated via the Bayesian Stochastics Filtering algorithm. 
  
