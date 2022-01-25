@@ -23,7 +23,7 @@ vector<double> SimulatedDataRnd(int nCP, int nn, vector<double>& outputs) {
 	for (int i = 1; i <= nCP;i++) {
 		unsigned seed = chrono::system_clock::now().time_since_epoch().count(); // seed to generate random noise
 		std::default_random_engine generator(seed);
-		int aa = CPs[i-1]+ CPDist(generator);
+		int aa = CPs[i-1]+ max(20,CPDist(generator));
 		// cout << aa << "\n";
 		if ( aa <= nn) {
 			CPs.push_back(aa);
@@ -57,13 +57,6 @@ vector<double> SimulatedDataRnd(int nCP, int nn, vector<double>& outputs) {
 		outputs.push_back(Bs[i - 1]);
 		outputs.push_back(Gs[i - 1]);
 	}
-
-
-    cout  << "Outputs:  ";
-    for (int i=1;i<=outputs.size();i++){
-       cout  << outputs[i-1] << "," ;
-    }
-    cout  << "\n\n";
     
 	CPs.push_back(nn);
 	for (int t =  CPs[0]+1; t <= min(CPs[1],nn); t++) {
@@ -112,7 +105,6 @@ vector<double> SimulatedSigInputs(vector<double> Inputs, int nn, int vars, int L
 		Bs[i - 1] = Inputs[(i - 1) * (vars + 1) + 2];
 		Gs[i - 1] = Inputs[(i - 1) * (vars + 1) + 3];
 	}
-
 
 	CPs.push_back(nn);
 	if (Lversion == 0) {

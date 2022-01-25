@@ -13,7 +13,7 @@ using namespace std;
 #include <random>
 
 // Range of parameter variables
-double Alphahigh = 35, Alphalow = 20, dAlpha = 0.5;
+double Alphahigh = 15, Alphalow = 5, dAlpha = 0.5;
 //double bb = 0.21, aa = 0.01, dd = 0.001, Gammahigh = bb, Betahigh = bb, Gammalow = aa, Betalow = aa, dBeta = dd, dGamma = dd;
 //nBeta = int(((Betahigh - Betalow + dBeta)) / dBeta), nGamma = int(((Gammahigh - Gammalow + dGamma)) / dGamma);
 double gammaMin=0.01, betaMin=0.002;
@@ -58,7 +58,6 @@ void GenerateABGVecs(){
         gammaVec[i-1]=int2gamma(i);
     }
 }
-
 
 // Distribution of Noise (must be normally distributed)
 std::normal_distribution<double> Noise(0,1);
@@ -115,11 +114,11 @@ double mu0( int t, double alpha, double  beta, double gamma, double start) {
 
 double mu1(int t, double alpha, double  beta, double gamma, double start) {
 
-    return sqrt(((start*start - alpha*alpha) * exp(-beta * (t))) + alpha*alpha);
+    return (start - alpha) * exp(-beta * (t)) + alpha;
 }
 
 double mu2(int t, double alpha, double  beta, double gamma, double start) {
     
-	return start * (exp(-0.5*gamma * t));
+	return start * (exp(-gamma * t));
 }
 
