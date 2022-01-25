@@ -35,7 +35,7 @@ The depostitory contains:
 
 # Demo
 
-  To run the Bayesian Filtering agorithm on the simulated data, firstly download all files. 
+  To run the demo of the Bayesian Stochastic Filtering algorithm on the simulated data, firstly download all files. 
   
   This can be done via the command:
   ```
