@@ -8,9 +8,9 @@ The depostitory contains:
  A simulated dataset to demo the code.
 
 - [System Requirements](#system-requirements)
-- [Installation guide](#installation_guide)
+- [Installation guide](#installation-guide)
 - [Demo](#demo)
-- [Instructions for use](#instructions_for_use)
+- [Instructions for use](#instructions-for-use)
 
 # System requirements
   
