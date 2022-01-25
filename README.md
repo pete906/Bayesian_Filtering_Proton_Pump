@@ -23,9 +23,9 @@ The depostitory contains:
   
   Versions the software has been tested on:
   
-  macOS Monterey, Version 12.1
-  g++ (GCC) 12.0.5
-  Python 2.7.18
+  + macOS Monterey, Version 12.1
+  + g++ (GCC) 12.0.5
+  + Python 2.7.18
 
 # Installation guide
 
