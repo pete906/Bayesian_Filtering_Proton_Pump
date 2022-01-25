@@ -10,6 +10,7 @@ The depostitory contains:
 - [System Requirements](#system-requirements)
 - [Installation guide](#installation_guide)
 - [Demo](#demo)
+- [Instructions for use](#instructions_for_use)
 
 # System requirements
   
