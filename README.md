@@ -39,11 +39,11 @@ The depostitory contains:
   
   This can be done via the command:
   ```
-   git clone https://github.com/pete906/Bayesian_Filtering_Proton_Pump.git
+  git clone https://github.com/pete906/Bayesian_Filtering_Proton_Pump.git
   ```
   Nativigate to the "Bayesian_Filtering_Proton_Pump" folder created; This can be achieved by moving the folder to the desktop and using the command 
   ```
-   cd Desktop/Bayesian_Filtering_Proton_Pump
+  cd Desktop/Bayesian_Filtering_Proton_Pump
   ```
   The command 
   ```
