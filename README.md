@@ -31,7 +31,7 @@ The depostitory contains:
 
   No installation required, other than suitable C++ complier, e.g. g++ (GCC), and python for plotting of results.
   
-  See [Demo] below for instructions on running the demo.
+  See [Demo](#demo) section below for instructions on running the demo.
 
 # Demo
 
