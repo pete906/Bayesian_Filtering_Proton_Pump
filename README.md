@@ -11,14 +11,14 @@ The depostitory contains:
 - [Installation guide](#installation_guide)
 - [Demo](#demo)
 
-  # System requirements
+# System requirements
   
-  ## Hardware requirements
+ ## Hardware requirements
   The code used in the Demo requires only a standard computer with enough RAM to support the in-memory operations.
 
   Does not require any non-standard hardware, however the code is parallelisable (via OpenMP) and so parallel processing will increase the speed with more CPU cores available. Results for paper were produced using KU server with 54 cores.
  
-  ## Software requirements
+ ## Software requirements
   The code used in the Demo requires only a C++ and Python complier and an OS that can support. 
   
   Versions the software has been tested on:
