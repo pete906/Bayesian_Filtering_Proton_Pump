@@ -6,9 +6,9 @@ data = np.genfromtxt("Output.csv", delimiter=",", names=["Signal", "Observed", "
 time=  list(range(1, len(data['Signal'])+1))
 
 plt.plot(time,data['Observed'])
-plt.plot(time,data['MAPestimate'])
-plt.plot(time,data['Signal'])
-plt.legend(['Observed data', 'Unobservable Signal','MAP estimate for Signal'])
+plt.plot(time,data['MAPestimate'],linewidth=1)
+plt.plot(time,data['Signal'],'--')
+plt.legend(['Observed data', 'MAP estimate for Signal','Unobservable Signal',])
 plt.xlabel('Time (s)')
 plt.ylabel('Observed data')
 plt.show()
