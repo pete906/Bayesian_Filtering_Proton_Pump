@@ -57,6 +57,8 @@ The depostitory contains:
   
   In the "Output.csv" file will be three columns of data, the first is the unobservable signal (available as we are simulating the data), the second is the observed data (the unobservable signal plus noise), and the third is the resulting most probable (MAP) estimate for the signal calculated via the Bayesian Stochastic Filtering algorithm. 
  
+  The repository also contains an example of an output in the file "ExampleOutput.csv" which will not be changed by running the demo.
+ 
   The Makefile (run using the "make" command) also produces a plot of the results using a small python script "Plot_outputs.py", however a similar graph may be created and viewed using excel or similar program.
 
   Expected run time for demo on a "normal" desktop computer is approximately 30 seconds (possibly a few minutes on older computers).
