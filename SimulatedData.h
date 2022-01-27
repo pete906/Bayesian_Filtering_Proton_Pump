@@ -31,10 +31,11 @@ vector<double> SimulatedDataRnd(int nCP, int nn, vector<double>& outputs) {
 		else { i = nCP; }
 	}
 
+ 
+    
 	// nCP redefined as the actual number of change-points in the data
 	nCP = CPs.size();
 	for (int i =2; i <= nCP;i++) {
-
 		if ((i) % 2 == 0) {
             unsigned seed = chrono::system_clock::now().time_since_epoch().count(); // seed to generate random noise
             std::default_random_engine generator(seed);
@@ -47,7 +48,6 @@ vector<double> SimulatedDataRnd(int nCP, int nn, vector<double>& outputs) {
 			Bs.push_back(0);
 			Gs.push_back(GammaDist(generator));
 		}
-
 	}
    
 
@@ -57,6 +57,13 @@ vector<double> SimulatedDataRnd(int nCP, int nn, vector<double>& outputs) {
 		outputs.push_back(Bs[i - 1]);
 		outputs.push_back(Gs[i - 1]);
 	}
+    
+    
+    
+//    for (int i =1; i<=outputs.size(); i++){
+//        cout <<outputs[i-1] << ", ";
+//    }
+//    cout << "\n";
     
 	CPs.push_back(nn);
 	for (int t =  CPs[0]+1; t <= min(CPs[1],nn); t++) {

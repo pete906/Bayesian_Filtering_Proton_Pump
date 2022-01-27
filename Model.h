@@ -13,10 +13,10 @@ using namespace std;
 #include <random>
 
 // Range of parameter variables
-double Alphahigh = 15, Alphalow = 5, dAlpha = 0.5;
+double Alphahigh = 20, Alphalow = 10, dAlpha = 0.5;
 //double bb = 0.21, aa = 0.01, dd = 0.001, Gammahigh = bb, Betahigh = bb, Gammalow = aa, Betalow = aa, dBeta = dd, dGamma = dd;
 //nBeta = int(((Betahigh - Betalow + dBeta)) / dBeta), nGamma = int(((Gammahigh - Gammalow + dGamma)) / dGamma);
-double gammaMin=0.01, betaMin=0.002;
+double gammaMin=0.01, betaMin=0.025;
 int nGamma = 25, nBeta=25;
 int nAlpha = int(((Alphahigh - Alphalow + dAlpha)) / dAlpha);
 
